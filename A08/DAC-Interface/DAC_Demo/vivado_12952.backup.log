@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 10:08:03 2020
+# Process ID: 12952
+# Current directory: D:/A08/DAC-Interface/DAC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11856 D:\A08\DAC-Interface\DAC_Demo\DAC_Demo.xpr
+# Log file: D:/A08/DAC-Interface/DAC_Demo/vivado.log
+# Journal file: D:/A08/DAC-Interface/DAC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:45 ; elapsed = 00:00:22 . Memory (MB): peak = 809.918 ; gain = 194.281
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 10:13:54 2020...

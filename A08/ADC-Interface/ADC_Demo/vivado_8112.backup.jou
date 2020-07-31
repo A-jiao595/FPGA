@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 10:07:57 2020
+# Process ID: 8112
+# Current directory: D:/A08/ADC-Interface/ADC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18856 D:\A08\ADC-Interface\ADC_Demo\ADC_Demo.xpr
+# Log file: D:/A08/ADC-Interface/ADC_Demo/vivado.log
+# Journal file: D:/A08/ADC-Interface/ADC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/A08/ADC-Interface/ADC_Demo/ADC_Demo.xpr
+update_compile_order -fileset sources_1
+report_ip_status -name ip_status 
+report_ip_status -name ip_status 
+set_property  ip_repo_paths  {d:/IP_Core/HDMI-IP/IP/RGB2DVI_IP d:/A08/ADC-Interface/FPGA/SEA-Tutorial/FPGA_IP/Mini-HDMI-IP D:/FPGA/SEA-Tutorial/FPGA_IP/Mini-HDMI-IP} [current_project]
+update_ip_catalog
+export_ip_user_files -of_objects  [get_files D:/A08/ADC-Interface/ADC_Demo/ADC_Demo.srcs/sources_1/ip/rgb2dvi_1/rgb2dvi_1.xci] -no_script -reset -force -quiet
+remove_files  -fileset rgb2dvi_1 D:/A08/ADC-Interface/ADC_Demo/ADC_Demo.srcs/sources_1/ip/rgb2dvi_1/rgb2dvi_1.xci
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1

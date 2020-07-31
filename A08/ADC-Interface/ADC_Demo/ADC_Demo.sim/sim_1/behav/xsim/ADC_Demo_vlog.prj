@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../ADC_Demo.srcs/sources_1/ip/Wave_Ram/Wave_Ram_sim_netlist.v" \
+"../../../../ADC_Demo.srcs/sources_1/ip/rgb2dvi_0/rgb2dvi_0_sim_netlist.v" \
+"../../../../ADC_Demo.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/Clk_Division.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/Driver_ADC.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/Driver_HDMI.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/Freq_Cal.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/Wave_Generator.v" \
+"../../../../ADC_Demo.srcs/sources_1/new/ADC_Demo.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

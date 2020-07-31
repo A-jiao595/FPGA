@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 09:44:27 2020
+# Process ID: 8004
+# Current directory: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19120 D:\SEA-master\Examples\FPGA\4.Module-Interface\DAC-Interface\DAC_Demo\DAC_Demo.xpr
+# Log file: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/vivado.log
+# Journal file: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.xpr
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_5_10 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_5_10] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips clk_5_10] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Sin_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Sin_Rom] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Sin_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Square_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Square_Rom] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Square_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Triangle_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Triangle_Rom] -log ip_upgrade.log
+export_ip_user_files -of_objects [get_ips Triangle_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_run impl_1

@@ -1,0 +1,13 @@
+0.6
+2018.3
+Dec  7 2018
+00:33:28
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/Sin_Rom_sim_netlist.v,1596160540,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_sim_netlist.v,,Sin_Rom;Sin_Rom_blk_mem_gen_generic_cstr;Sin_Rom_blk_mem_gen_prim_width;Sin_Rom_blk_mem_gen_prim_wrapper_init;Sin_Rom_blk_mem_gen_top;Sin_Rom_blk_mem_gen_v8_4_2;Sin_Rom_blk_mem_gen_v8_4_2_synth,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/Square_Rom_sim_netlist.v,1596160540,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/Sin_Rom_sim_netlist.v,,Square_Rom;Square_Rom_blk_mem_gen_generic_cstr;Square_Rom_blk_mem_gen_prim_width;Square_Rom_blk_mem_gen_prim_wrapper_init;Square_Rom_blk_mem_gen_top;Square_Rom_blk_mem_gen_v8_4_2;Square_Rom_blk_mem_gen_v8_4_2_synth,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/Triangle_Rom_sim_netlist.v,1596160540,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/Square_Rom_sim_netlist.v,,Triangle_Rom;Triangle_Rom_blk_mem_gen_generic_cstr;Triangle_Rom_blk_mem_gen_prim_width;Triangle_Rom_blk_mem_gen_prim_wrapper_init;Triangle_Rom_blk_mem_gen_top;Triangle_Rom_blk_mem_gen_v8_4_2;Triangle_Rom_blk_mem_gen_v8_4_2_synth,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10_sim_netlist.v,1596160420,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v,,clk_5_10;clk_5_10_clk_5_10_clk_wiz,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Clk_Division.v,1595774089,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v,,Clk_Division,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v,1595774089,verilog,,,,DAC_Demo,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DDS_Addr_Generator.v,1595774089,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v,,DDS_Addr_Generator,,,,,,,,
+D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/Driver_DAC.v,1595774089,verilog,,D:/A08/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/new/DAC_Demo.v,,Driver_DAC,,,,,,,,

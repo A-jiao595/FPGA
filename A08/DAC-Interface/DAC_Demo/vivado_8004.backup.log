@@ -1,0 +1,111 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 31 09:44:27 2020
+# Process ID: 8004
+# Current directory: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19120 D:\SEA-master\Examples\FPGA\4.Module-Interface\DAC-Interface\DAC_Demo\DAC_Demo.xpr
+# Log file: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/vivado.log
+# Journal file: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Opex9020/Desktop/SEA-Tutorial/Experiment-of-SEA/FPGA-Demo-Project/DAC-Demo/DAC_Demo' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2018.3/data/ip'.
+WARNING: [IP_Flow 19-2162] IP 'Sin_Rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'Sin_Rom' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'Square_Rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'Square_Rom' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'Triangle_Rom' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'Triangle_Rom' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+WARNING: [IP_Flow 19-2162] IP 'clk_5_10' is locked:
+* IP definition 'Clocking Wizard (6.0)' for IP 'clk_5_10' (customized with software release 2018.2) has a different revision in the IP Catalog.
+Please select 'Report IP Status' from the 'Tools/Report' menu or run Tcl command 'report_ip_status' for more information.
+INFO: [Project 1-230] Project 'DAC_Demo.xpr' upgraded for this version of Vivado.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:12 . Memory (MB): peak = 702.238 ; gain = 71.605
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+report_ip_status -name ip_status 
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+upgrade_ip -srcset clk_5_10 -vlnv xilinx.com:ip:clk_wiz:6.0 [get_ips  clk_5_10] -log ip_upgrade.log
+Upgrading 'clk_5_10'
+INFO: [Project 1-386] Moving file 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/clk_5_10/clk_5_10.xci' from fileset 'clk_5_10' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded clk_5_10 (Clocking Wizard 6.0) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'clk_5_10'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/ip_upgrade.log'.
+upgrade_ip: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 825.094 ; gain = 90.211
+export_ip_user_files -of_objects [get_ips clk_5_10] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Sin_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Sin_Rom] -log ip_upgrade.log
+Upgrading 'Sin_Rom'
+INFO: [Project 1-386] Moving file 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Sin_Rom/Sin_Rom.xci' from fileset 'Sin_Rom' to fileset 'sources_1'.
+INFO: [Device 21-403] Loading part xc7s15ftgb196-1
+INFO: [IP_Flow 19-3422] Upgraded Sin_Rom (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Sin_Rom'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Sin_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Square_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Square_Rom] -log ip_upgrade.log
+Upgrading 'Square_Rom'
+INFO: [Project 1-386] Moving file 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Square_Rom/Square_Rom.xci' from fileset 'Square_Rom' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Square_Rom (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Square_Rom'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Square_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+upgrade_ip -srcset Triangle_Rom -vlnv xilinx.com:ip:blk_mem_gen:8.4 [get_ips  Triangle_Rom] -log ip_upgrade.log
+Upgrading 'Triangle_Rom'
+INFO: [Project 1-386] Moving file 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.srcs/sources_1/ip/Triangle_Rom/Triangle_Rom.xci' from fileset 'Triangle_Rom' to fileset 'sources_1'.
+INFO: [IP_Flow 19-3422] Upgraded Triangle_Rom (Block Memory Generator 8.4) from revision 1 to revision 2
+INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'Triangle_Rom'...
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips Triangle_Rom] -no_script -sync -force -quiet
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Triangle_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Square_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'Sin_Rom'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'clk_5_10'...
+INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'clk_5_10'...
+[Fri Jul 31 09:52:06 2020] Launched Sin_Rom_synth_1, Triangle_Rom_synth_1, Square_Rom_synth_1, clk_5_10_synth_1, synth_1...
+Run output will be captured here:
+Sin_Rom_synth_1: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Sin_Rom_synth_1/runme.log
+Triangle_Rom_synth_1: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Triangle_Rom_synth_1/runme.log
+Square_Rom_synth_1: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/Square_Rom_synth_1/runme.log
+clk_5_10_synth_1: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/clk_5_10_synth_1/runme.log
+synth_1: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/synth_1/runme.log
+[Fri Jul 31 09:52:07 2020] Launched impl_1...
+Run output will be captured here: D:/SEA-master/Examples/FPGA/4.Module-Interface/DAC-Interface/DAC_Demo/DAC_Demo.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 964.871 ; gain = 0.000
+open_run impl_1
+INFO: [Netlist 29-17] Analyzing 20 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2018.3
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Constraints 18-4398] Generator version for shapeDB does not match. shapeDB will be regenerated.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1495.082 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 1495.082 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1495.082 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:24 ; elapsed = 00:00:16 . Memory (MB): peak = 1588.777 ; gain = 606.027
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 31 10:02:56 2020...

@@ -1,0 +1,73 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Fri Jul 31 09:57:50 2020
+| Host         : LAPTOP-SAC5FN0B running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file DAC_Demo_control_sets_placed.rpt
+| Design       : DAC_Demo
+| Device       : xc7s15
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |     6 |
+| Unused register locations in slices containing registers |    24 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      1 |            3 |
+|      5 |            1 |
+|      8 |            1 |
+|    16+ |            1 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               9 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              37 |            9 |
+| Yes          | No                    | No                     |               2 |            2 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------------+------------------------------+------------------------------------------------------+------------------+----------------+
+|                    Clock Signal                    |         Enable Signal        |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++----------------------------------------------------+------------------------------+------------------------------------------------------+------------------+----------------+
+|  clk_division/inst/clk_out2                        |                              |                                                      |                1 |              1 |
+|  clk_division/inst/clk_out1                        | Driver_DAC0/DAC_Sync_i_1_n_0 |                                                      |                1 |              1 |
+|  clk_division/inst/clk_out1                        | Driver_DAC0/p_0_in           |                                                      |                1 |              1 |
+|  clk_division/inst/clk_out1                        |                              | Driver_DAC0/DAC_Cnt[4]_i_1_n_0                       |                1 |              5 |
+|  Driver_DAC0/DDS_Addr_Generator/Clk_Division_0/Clk |                              |                                                      |                3 |              8 |
+|  clk_division/inst/clk_out2                        |                              | Driver_DAC0/DDS_Addr_Generator/Clk_Division_0/Count0 |                8 |             32 |
++----------------------------------------------------+------------------------------+------------------------------------------------------+------------------+----------------+
+
+
